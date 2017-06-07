@@ -1,0 +1,28 @@
+[package]
+authors = ["Evgeny Fomin <fominok@hotmail.com>"]
+categories = ["embedded", "no-std"]
+description = "Blue pill working example"
+keywords = ["arm", "cortex-m", "template"]
+license = "MIT OR Apache-2.0"
+name = "demo"
+repository = "https://github.com/fominok/baremetal-rust-intro"
+version = "0.1.8"
+
+[dependencies]
+stm32f103xx = "0.6.1"
+
+[dependencies.cast]
+default-features = false
+version = "0.2.2"
+
+[dependencies.cortex-m]
+version = "0.2.7"
+
+[dependencies.cortex-m-rt]
+version = "0.2.3"
+
+[profile]
+
+[profile.release]
+debug = true
+lto = true
